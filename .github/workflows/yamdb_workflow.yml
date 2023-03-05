@@ -27,7 +27,7 @@ jobs:
       run: |
         pytest
         python -m flake8
-        cd infra_project/
+        cd yamdb_finale/
         python manage.py test
 
   build_and_push_to_docker_hub:
