@@ -94,7 +94,7 @@ git push
 * автоматический деплой проекта на боевой сервер;
 * отправка уведомления в Telegram о том, что процесс деплоя успешно завершился.
 
-![example workflow](https://github.com/maxahist/yamdb_finale/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/maxahist/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
 ### Авторы проекта
