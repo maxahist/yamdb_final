@@ -26,7 +26,7 @@ jobs:
       run: |
         pytest
         python -m flake8
-        cd infra_project/
+        cd api_yamdb/
         python manage.py test
 
   build_and_push_to_docker_hub:
@@ -49,7 +49,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: maxahist/actions:latest
+          tags: maxahist/yamdb_finale:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -62,9 +62,9 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           scripts: |
-            sudo docker pull maxahist/actions
+            sudo docker pull maxahist/finale_yamdb
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 8000:8000 maxahist/actions
+            sudo docker run --rm -d -p 8000:8000 maxahist/finale_yamdb
 
   send_message:
     runs-on: ubuntu-latest
