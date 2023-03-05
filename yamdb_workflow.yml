@@ -20,7 +20,7 @@ jobs:
       run: |
         cd api_yamdb/
         python -m pip install --upgrade pip
-        pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
+        pip install flake8 
         pip install -r requirements.txt
 
     - name: Test with flake8 and django tests
@@ -75,4 +75,3 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{secrets.TELEGRAM_TOKEN }}
           message: ${{ github.workflow }} успешно выполнен!
-
