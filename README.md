@@ -96,6 +96,7 @@ git push
 
 ![example workflow](https://github.com/maxahist/yamdb_finale/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+
 ### Авторы проекта
 * https://github.com/maxahist
 * https://github.com/Egor5061
