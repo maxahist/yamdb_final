@@ -82,6 +82,20 @@ docker-compose exec web python manage.py collect static
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
+
+## Подключен GitHub Actions
+после команды 
+
+```commandline
+git push
+```
+* проверка кода на соответствие стандарту PEP8 (с помощью пакета flake8) и запуск pytest из репозитория yamdb_final;
+* сборка и доставка докер-образа для контейнера web на Docker Hub;
+* автоматический деплой проекта на боевой сервер;
+* отправка уведомления в Telegram о том, что процесс деплоя успешно завершился.
+
+![example workflow](https://github.com/maxahist/yamdb_finale/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 ### Авторы проекта
 * https://github.com/maxahist
 * https://github.com/Egor5061
