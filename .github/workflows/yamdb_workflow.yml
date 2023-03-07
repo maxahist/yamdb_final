@@ -64,7 +64,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          scripts: |
+          script: |
             sudo docker-compose stop
             sudo docker pull maxahist/yamdb_finale:latest
             sudo docker-compose rm web
