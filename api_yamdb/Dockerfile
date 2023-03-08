@@ -10,5 +10,5 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 COPY . .
 
-CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000", "--platform linux/amd64"]
+CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000", "--platform linux/arm64"]
 
