@@ -33,19 +33,6 @@ python3 manage.py runserver
 ```
 [python3 manage.py runserver](http://127.0.0.1:8000/redoc/)
 ```
-### Примеры API запросов
-
-http://127.0.0.1:8000/api/v1/auth/signup/
-Регистрация нового пользователя. Обязательные поля: email, username
-http://127.0.0.1:8000/api/v1/titles/
-Список всех произведений, к которым пишут отзывы. POST-запрос возможен только от администратора
-http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/
-GET-запрос: получение списка всех отзывов к конкретному произведению, при POST-запросе - добавление нового отзыва.
-Возможно частичное обновление отзыва по адресу:
-http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/
-Редактировать отзыв могут автор, модератор, админ
-http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/comments/
-Список всех комментариев к отзыву, зарегистрированные пользователи могут прокомментировать отзыв.
 
 ## Шаблон наполнения .env 
 ```
@@ -95,6 +82,9 @@ git push
 * отправка уведомления в Telegram о том, что процесс деплоя успешно завершился.
 
 ![example workflow](https://github.com/maxahist/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+# url проекта
+51.250.27.210
 
 
 ### Авторы проекта
