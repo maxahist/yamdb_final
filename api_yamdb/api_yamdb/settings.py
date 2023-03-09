@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='False_SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', default='*').split(' ')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', default='*').split()
 
 
 INSTALLED_APPS = [
